@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Legends Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+  <h1>Welcome to Cricket Legends Hub</h1>
+  <p>Explore the Icons of Cricket Across Generations</p>
+  <a href="#players" class="cta-button">Meet the Legends</a>
+</header>
+<br>
+  <!-- Introduction to Cricket -->
+  <section id="intro">
+    <h2>An Introduction to the World of Cricket</h2>
+    <p>Cricket is a sport with a rich history dating back centuries. From its origins in England to becoming a global phenomenon, cricket has produced some of the most iconic sportsmen. Whether it’s the nail-biting rivalries or the thrilling World Cup moments, cricket continues to capture the hearts of millions worldwide.</p>
+  </section>
+
+  <!-- Featured Players Section -->
+  <section id="players">
+    <h2>Featured Players</h2>
+    <div class="player-slider">
+      <div class="player">
+        <img src="images/player1.jpg" alt="Player 1">
+        <h3>Rohith Sharma (Hitman)</h3>
+        <p>Legendary Batsman</p>
+        <p><strong>Career Statistics:</strong> 10,000 runs, 25 centuries</p>
+        <p><strong>Achievements:</strong> World Cup Winner (2011), ICC Player of the Year (2012)</p>
+      </div>
+      <div class="player">
+        <img src="images/player2.jpg" alt="Player 2">
+        <h3>Jasprit Bumrah (Boom Boom)</h3>
+        <p>Top Fast Bowler</p>
+        <p><strong>Career Statistics:</strong> 500 wickets, 10 five-wicket hauls</p>
+        <p><strong>Achievements:</strong> ICC Bowler of the Year (2010), Ashes Winner (2013)</p>
+      </div>
+      <div class="player">
+        <img src="images/player6.jpeg" alt="Player 6">
+        <h3>David Warner (The Bull)</h3>
+        <p>Legendary Opening Batsman</p>
+        <p><strong>Career Statistics:</strong> 12,503 run, 34 centuries</p>
+        <p><strong>Achievements:</strong> Allan Border Medal (2016, 2017), Australian Sports Medal (2022)</p>
+      </div>
+        <div class="player">
+          <img src="images/player4.jpeg" alt="Player 4">
+          <h3>Ravindra Jadeja (Sir Jadeja)</h3>
+          <p>Legendary All-Rounder</p>
+          <p><strong>Career Statistics:</strong> 5,585 runs, 3 centuries, 495 wickets</p>
+          <p><strong>Achievements:</strong>Ranji Trophy Winner (2010), Arjuna Award (2019)</p>
+        </div>
+    </div>
+    <br>
+    <div class="player-slider">
+        <div class="player">
+          <img src="images/player5.jpeg" alt="Player 5">
+          <h3>MS Dhoni (Thala)</h3>
+          <p>Legendary Wicket-Keeper Batsman</p>
+          <p><strong>Career Statistics:</strong> 17.902 runs, 16 centuries</p>
+          <p><strong>Achievements:</strong> World Cup Winner (2011), ICC Champions Trophy Winner (2013), Padma Bhushan Award (2018)
+            </p>
+        </div>
+        <div class="player">
+            <img src="images/player3.jpeg" alt="Player 3">
+            <h3>Virat Kohli (King Kohli)</h3>
+            <p>Legendary Batsman</p>
+            <p><strong>Career Statistics:</strong> 24,206 runs, 46 centuries</p>
+            <p><strong>Achievements:</strong> ICC World Twenty20 Winner (2016), Padma Shri Award (2017) </p>
+          </div>
+        <div class="player">
+          <img src="images/player7.jpg" alt="Player 7">
+          <h3>Yuvraj Singh (Yuvi)</h3>
+          <p>Legendary All-Rounder</p>
+          <p><strong>Career Statistics:</strong> 11,378 runs, 14 centuries, 147 wickets</p>
+          <p><strong>Achievements:</strong> World Cup Winner (2011), Arjuna Award (2012)
+          </p>
+        </div>
+          <div class="player">
+            <img src="images/player8.jpg" alt="Player 8">
+            <h3>Shane Watson (Watto)</h3>
+            <p>Legendary All-Rounder</p>
+            <p><strong>Career Statistics:</strong> 10,950 runs, 14 centuries, 291 wickets </p>
+            <p><strong>Achievements:</strong> ICC World Cup Winner (2015), Allan Border Medal (2010, 2011)</p>
+          </div>
+      </div>
+  </section>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Interactive Map Section -->
+    <section id="map">
+      <h2>Explore the Legends' Hometowns</h2>
+      <div id="world-map"></div> <!-- Div to hold the map -->
+    </section>
+<!-- Top Matches Section with Video Highlights -->
+<section id="top-matches">
+    <h2>Memorable Matches</h2>
+    <div class="match-grid">
+      <!-- Match 1 -->
+      <div class="match-card">
+        <img src="images/match1.jpg" alt="Match 1">
+        <h3>India vs Pakistan - 2007</h3>
+        <p>An epic T20 World Cup final.</p>
+        <!-- Video Highlight -->
+        <video width="100%" controls>
+          <source src="match1_highlight.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Match 2 -->
+      <div class="match-card">
+        <img src="images/match2.jpg" alt="Match 2">
+        <h3>Australia vs England - 2005</h3>
+        <p>A thrilling Ashes encounter.</p>
+        <!-- Video Highlight -->
+        <video width="100%" controls>
+          <source src="match2_highlight.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Add more match cards as needed -->
+    </div>
+  </section>
+
+
+<!-- Fan Zone Section -->
+<section id="fan-zone">
+    <h2>Fan Zone</h2>
+
+    <!-- Voting Section -->
+    <div id="voting-section">
+      <h3>Vote for the Greatest Players of All Time</h3>
+      <form id="vote-form">
+        <label for="player-select">Select a Player:</label>
+        <select id="player-select">
+          <option value="Rohith Sharma">Rohith Sharma</option>
+          <option value="Jasprit Bumrah">Jasprit Bumrah</option>
+          <option value="Sachin Tendulkar">Sachin Tendulkar</option>
+          <option value="Virat Kholi">Virat Kholi</option>
+          <option value="David Warner">David Warner</option>
+          <option value="MS Dhoni">MS Dhoni</option>
+          <!-- Add more players as needed -->
+        </select>
+        <button type="button" id="submit-vote">Submit Vote</button>
+      </form>
+      <div id="vote-results">
+        <!-- Vote results will be dynamically displayed here -->
+      </div>
+    </div>
+
+    <!-- Story Submission Section -->
+    <div id="story-section">
+      <h3>Share Your Cricket Story</h3>
+      <form id="story-form">
+        <label for="fan-name">Your Name:</label>
+        <input type="text" id="fan-name" placeholder="Enter your name" required>
+
+        <label for="fan-story">Your Favorite Cricket Story:</label>
+        <textarea id="fan-story" rows="4" placeholder="Share your favorite memory" required></textarea>
+
+        <button type="button" id="submit-story">Submit Story</button>
+      </form>
+
+      <div id="fan-stories">
+        <!-- Fan stories will be displayed here dynamically -->
+      </div>
+    </div>
+  </section>
+
+    <!-- Leaflet.js JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+
+  <footer>
+    <p> 2024 Cricket Legends Hub </p>
+  </footer>
+</body>
+</html>
